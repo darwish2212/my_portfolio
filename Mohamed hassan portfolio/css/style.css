@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    transition: background 0.3s, color 0.3s;
+  }
+
+#home {
+  height: 100vh;
+}
+
+.left-side {
+  background:whitesmoke;; /* رمادي فاتح */
+  min-height: 100vh;
+}
+
+.right-side {
+  background: #000; /* أسود */
+  min-height: 100vh;
+}
+
+#home img {
+  max-width: 80%;
+  height: auto;
+}
+
+  
+  #services .card {
+    transition: transform 0.3s ease;
+  }
+  
+  #services .card:hover {
+    transform: translateY(-10px);
+  }
+  #skills img, 
+#skills i {
+  transition: transform 0.3s;
+}
+#skills img:hover,
+#skills i:hover {
+  transform: scale(1.2);
+}
+.text-purple {
+  color: #7952b3;
+}
+/* Contact icons style */
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s, background 0.3s;
+  text-decoration: none;
+}
+
+/* Colors per platform */
+.contact-icon.email { background: #ea4335; }     /* Gmail Red */
+.contact-icon.whatsapp { background: #25d366; } /* WhatsApp Green */
+.contact-icon.mostaql { background: #1a73e8; }  /* Blue */
+.contact-icon.khamsat { background: #f9a825; }  /* Yellowish */
+.contact-icon.linkedin { background: #0077b5; } /* LinkedIn Blue */
+.contact-icon.facebook { background: #1877f2; } /* Facebook Blue */
+.contact-icon.github { background: #333; }      /* GitHub Black */
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .project-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #eaeaea;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #222 !important;
+  }
+  
+  body.dark-mode footer {
+    background-color: #222;
+    color: #ccc;
+  }
+  
+  body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #eee;
+  }
+  
